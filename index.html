@@ -4,31 +4,85 @@
     <meta charset="utf-8">
     <title>Developer Homepage - Mr. Foos</title>
     <style>
+      #myLists {
+        background-color: green;
+      }
+      a, a:active, a:visited {
+          color:orange;
+      }
       ul {
-        max-width: 320px;
+        width: 300px;
         vertical-align: top;
         display: inline-block;
+        padding-left: 0;
+        background-color: grey;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        height: 100%;
       }
       li {
-        list-style: circle;
-        margin-left: 20px;
+        text-align: center;
+        list-style: none;
+        color: red;
       }
       li.title {
-        list-style: none;
         font-size: 20px;
         font-weight: 800;
         margin-left: 0;
+        color: white;
       }
       li.subCategory {
         list-style: none;
-        margin-left: 0px;
+      }
+      li.subCategory ul {
+        list-style: none;
       }
       li.subCategory .title {
         font-size: 17px;
         font-weight: 600;
+        margin: 10px 0 5px;
+      }
+      .subCategory ul {
+        background-color: none;
+        margin: 0;
+        padding: 0;
       }
       a.notMaintained {
         color: grey;
+      }
+      @media only screen and (min-width: 1280px) {
+          a:hover {
+            color: #000;
+          }
+      }
+      @media only screen and (max-width: 1280px) {
+        a {
+          font-size: 25px;
+        }
+        li {
+          margin-top: 5px;
+        }
+        li.title {
+          font-size: 30px;
+        }
+        li.title {
+          margin-top: 0;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+          #myLists {
+              padding: 10px 0;
+          }
+          ul {
+            display: block;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 20px 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
       }
     </style>
     <script>
@@ -56,6 +110,9 @@
             </li>
             <li>
               <a href="http://shoptalkshow.com/">Shop Talk Show</a>
+            </li>
+            <li>
+              <a href="http://frontendhappyhour.com/">Front End Happy Hour</a>
             </li>
         </ul>
         <ul>
@@ -90,6 +147,14 @@
             </li>
             <li>
               <a href="https://developers.google.com/web/fundamentals/design-and-ui/responsive/patterns?hl=en">Responsive Web Design Patterns</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="title">
+                Productivity Tools
+            </li>
+            <li>
+              <a href="https://github.com/notwaldorf/tiny-care-terminal">Tiny Care Terminal</a>
             </li>
         </ul>
         <ul>
@@ -144,6 +209,38 @@
             </li>
             <li>
               <a href="https://www.pluralsight.com/">Pluralsite</a> - Paid $$
+            </li>
+        </ul>
+        <ul>
+            <li class="title">
+                Automation Testing
+            </li>
+            <li>
+              <a href="http://galenframework.com/">Galen framework</a>
+            </li>
+            <li>
+              <a href="http://www.seleniumhq.org/">Selenium HQ</a>
+            </li>
+            <li>
+              <a href="https://cucumber.io/">Cucumber</a>
+            </li>
+            <li>
+              <a href="https://www.perfectomobile.com/">Perfecto</a>
+            </li>
+            <li>
+              <a href="https://saucelabs.com/">Sauce Labs</a>
+            </li>
+            <li>
+              <a href="https://www.dynatrace.com/">Dynatrace</a>
+            </li>
+            <li>
+              <a href="http://site.mockito.org/">Mockito</a>
+            </li>
+            <li>
+              <a href="https://saas.hpe.com/en-us/software/application-lifecycle-management">Application Lifecycle Management (ALM)</a>
+            </li>
+            <li>
+              <a href="http://www.ontestautomation.com/">On Test Automation</a> - Blog
             </li>
         </ul>
         <ul>
@@ -222,7 +319,7 @@
                         Frameworks
                     </li>
                     <li>
-                      <a href="http://dsheiko.com/weblog/creating-a-web-component-with-vanillajs-x-tag-and-polymer">Creating a web-component: VanillaJS vs X-Tag vs Polymer</a>
+                      <a href="http://dsheiko.com/weblog/creating-a-web-component-with-vanillajs-x-tag-and-polymer">VanillaJS vs X-Tag vs Polymer</a>
                     </li>
                     <li>
                       <a href="https://www.polymer-project.org/">Polymer</a>
@@ -246,32 +343,6 @@
                       <a href="http://slimjs.com/">SlimJS</a>
                     </li>
                 </ul>
-            </li>
-        </ul>
-        <ul>
-            <li class="title">
-                Automation Testing
-            </li>
-            <li>
-              <a href="http://galenframework.com/">Galen framework</a>
-            </li>
-            <li>
-              <a href="https://www.perfectomobile.com/">Perfecto</a>
-            </li>
-            <li>
-              <a href="https://saucelabs.com/">Sauce Labs</a>
-            </li>
-            <li>
-              <a href="https://www.dynatrace.com/">Dynatrace</a>
-            </li>
-            <li>
-              <a href="http://site.mockito.org/">Mockito</a>
-            </li>
-            <li>
-              <a href="https://saas.hpe.com/en-us/software/application-lifecycle-management">Application Lifecycle Management (ALM)</a>
-            </li>
-            <li>
-              <a href="http://www.ontestautomation.com/">On Test Automation</a> - Blog
             </li>
         </ul>
       </div>
