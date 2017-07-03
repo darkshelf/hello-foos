@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Developer Homepage - Mr. Foos</title>
+
+    <!-- These files will give CORS Errors without a web server -->
     <link rel="import" href="index.js">
+    <link rel="import" href="index.css">
+
     <style>
       #myLists {
         background-color: green;
@@ -88,11 +92,9 @@
     </style>
     <script>
     myObject = {
-      "fullList": {
-
-      }
-    }
-    </script>
+  fullList: {}
+};
+</script>
   </head>
   <body>
       <div id="myLists">
@@ -160,6 +162,23 @@
             </li>
             <li>
               <a href="https://www.sitepoint.com/practical-guide-css-variables-custom-properties/?utm_source=CSS-Weekly&utm_campaign=Issue-270&utm_medium=email">A Practical Guide to CSS Variables (Custom Properties)</a>
+            </li>
+            <li>
+              <a href="https://neliosoftware.com/blog/essential-atom-packages/">Atom Web Dev Plugins</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="title">
+                JavaScript
+            </li>
+            <li>
+              <a href="https://www.sitepoint.com/currying-in-functional-javascript/">A Beginner’s Guide to Currying in Functional JavaScript</a>
+            </li>
+            <li>
+                <a href="http://2ality.com/2014/09/es6-modules-final.html">ECMAScript 6 modules: the final syntax</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UClKO7be7O9cUGL94PHnAeOA">Google Design</a>
             </li>
         </ul>
         <ul>
@@ -250,6 +269,12 @@
                 Automation Testing
             </li>
             <li>
+              <a href="https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d">5 Questions Every Unit Test Must Answer</a>
+            </li>
+            <li>
+              <a href="https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4">Why I use Tape Instead of Mocha & So Should You</a>
+            </li>
+            <li>
               <a href="http://amzotti.github.io/testing/2015/03/16/what-is-the-difference-between-a-test-runner-testing-framework-assertion-library-and-a-testing-plugin/">4 Classifications of Testing Software</a>
             </li>
             <li>
@@ -301,6 +326,18 @@
             </li>
             <li>
               <a href="https://github.com/facebookincubator/create-react-app">Create React App</a>
+            </li>
+            <li>
+              <a href="https://facebook.github.io/react/docs/state-and-lifecycle.html">State and Lifecycle</a>
+            </li>
+            <li>
+              <a href="https://github.com/ericelliott/react-pure-component-starter">React Pure Component Starter & Unit Testing</a>
+            </li>
+            <li>
+              <a href="https://egghead.io/courses/getting-started-with-redux">Getting Started with Redux</a>
+            </li>
+            <li>
+              <a href="https://egghead.io/courses/building-react-applications-with-idiomatic-redux">Building React Applications with Idiomatic Redux</a>
             </li>
             <li>
               <a href="https://www.slideshare.net/andrewrota/integrating-reactjs-into-a-php-application">Integrating React into a PHP App</a>
